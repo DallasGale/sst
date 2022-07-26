@@ -1,0 +1,47 @@
+.music {
+  position: absolute;
+  top: 80px;
+  padding: 20px;
+  background: rgba(255,255,255,0.05);
+  flex-direction: column;
+  display: flex !important;
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.music.open {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.music-link img{
+  display: block;
+  height: 50px;
+  width: 100%;
+  max-width: 60px;
+}
+.music-link {
+  text-indent: -9999px;
+}
+
+.ctas {
+  display: flex;
+  gap: 10px;
+  position: relative;;
+}
+
+.cta-btn {
+  background: none;
+  border: 1px solid #fff;
+  font-size: 22px;
+  padding: 15px 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cta-btn:hover {
+  color: var(--var-highlight);
+  transition: all 0.2s ease-in-out;
+}
