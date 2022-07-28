@@ -43,7 +43,7 @@
   padding: 0;
   position: fixed;
   z-index: -10;
-  bottom: 0;
+  top: 0;
   left: 0;
 }
 
@@ -68,18 +68,19 @@
 .contents {
   opacity: 0;
   animation: contents 1 forwards linear 1s;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   width: 100%;
   max-width: 1200px;
-  height: 100vh;
+  height: auto;
   display: flex;
   margin: 0 auto;
   gap: 30px;
   position: absolute;
-  top: 0;
+  top: 20vh;
   left: 0;
   right: 0;
+  padding-bottom: 80px;;
 
 }
 
@@ -132,14 +133,14 @@
 }
 
 .header {
-  padding: 10px;
+  padding: 10px 0 0 10px;
   display:  flex;
   align-items: flex-start;
   margin: 0 auto;
   left: 0;
   right: 0;
   width: 100%;
-  position: relative;
+  position: fixed;
   z-index: 2;
 }
 
