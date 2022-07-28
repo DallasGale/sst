@@ -1,0 +1,22 @@
+.contents {
+  flex-direction: column;
+  position: relative;
+  top: 20px;
+  height: auto;;
+}
+
+.cell-1, .cell-2 {
+  min-width: 90%;
+  width: 90%;
+  max-width: 90%;
+}
+
+.ep-artwork {
+  animation: none;
+  max-width: 95%;
+  width: 95%;
+}
+
+.nav {
+  justify-content: center;
+}

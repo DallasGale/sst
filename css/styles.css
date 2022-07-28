@@ -1,4 +1,6 @@
-@import "./cta-interaction.css";
+@import "./helpers.css";
+@import "./typography.css";
+@import "./footer.css";
 
 :root {
   --var-highlight: #f6bb00;
@@ -7,6 +9,7 @@
   font-family: 'Be Vietnam Pro', sans-serif;
   color: #fff;
 }
+
 .body {
   background: #000;
   margin: 0;
@@ -38,15 +41,33 @@
   margin: 0;
   overflow: hidden;
   padding: 0;
-  position: absolute;
+  position: fixed;
   z-index: -1;
   top: 0;
   left: 0;
 }
-.bold {
-  font-weight: bold;
+
+.buy-stream {
+  display: inline-flex;
+  flex: 1;
+  width: auto;
+  min-width: 200px;
+  max-width: 400px;
+}
+
+
+@keyframes contents {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 .contents {
+  opacity: 0;
+  animation: contents 1 forwards linear 1s;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -59,6 +80,7 @@
   top: 0;
   left: 0;
   right: 0;
+
 }
 
 .cell-1, .cell-2 {
@@ -76,9 +98,9 @@
 }
 .cell-2 {
   flex-direction: column;
-  max-width: 30%;
-  width: 30%;
-  min-width: 30%;
+  max-width: 40%;
+  width: 40%;
+  min-width: 40%;
 }
 
 
@@ -90,7 +112,7 @@
   }
 
   50% {
-    transform: scale(1.2) translateY(0) rotate(15deg);
+    transform: scale(1.2) translateY(0) rotate(2deg);
   }
 
 
@@ -111,7 +133,7 @@
 
 .header {
   padding: 10px;
-  display:inline-flex;
+  display:  flex;
   align-items: flex-start;
   margin: 0 auto;
   left: 0;
@@ -121,66 +143,12 @@
   z-index: 2;
 }
 
-.h1 {
-  font-size: 15px;
-  margin: 0;
-  font-weight: 700;
-  padding: 10px;
-  border: 1px solid #fff;
-  /* padding-right: 0; */
-  transition: all 0.2s ease-in-out;
-  position: relative;
-  /* opacity: 0; */
-}
-.h1:hover {
-  opacity: 1;
-  color: var(--var-highlight);
-  transition: all 0.2s ease-in-out;
-  /* padding-right: 200px; */
-}
-
-.h1 .nav-ul {
-  visibility: hidden;
-  height: 1px;
-}
-
-.h1:hover .nav-ul {
-  visibility: visible;
-  height: auto;
-
-}
-.h2 {
-  font-size: 20px;
-  font-weight: 100;
-  margin: 0;
-}
-
-.h3 {
-  font-size: 18px;
-  font-weight: 100;
-  margin: 0;
-}
-
-.highlighted {
-  color: var(--var-highlight);
-}
-
-.link {
-  color: #fff;
-  font-weight: bold;
-  font-size: 10px;
-  text-transform: uppercase;
-}
-.link:hover {
-  color: var(--var-highlight);
-  transition: all 0.2s ease-in-out;
-}
-
 .nav {
   display: flex;
   align-items: flex-start;
   flex-direction: row;
   width: 100%;
+  justify-content: space-between;
 }
 .nav-ul {
   padding: 0;
@@ -188,8 +156,6 @@
   margin: 0;
   display: flex;
   position: relative;
-  /* left: 0;
-  top: 20px; */
   flex-direction: row;
 }
 .nav-li {
@@ -201,11 +167,6 @@
 }
 
 
-.paragraph {
-  font-size: 12px;
-  line-height: 1.8;  
-  font-weight: 400;
-}
 
 .secondary-text {
   color: rgba(255,255,255,0.5);

@@ -1,0 +1,67 @@
+
+button {
+  cursor: pointer;
+}
+.footer {
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.listen-buy-container {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  background: rgba(255,255,255,0.08);
+  flex-direction: row;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.listen-buy-container.open {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.music-link img{
+  display: block;
+  height: 25px;
+  width: auto;
+  max-height: 30px;
+  /* max-width: 60px; */
+  padding-right: 20px;
+}
+.music-link {
+  text-indent: -9999px;
+  /* flex: 1; */
+}
+
+.ctas {
+  display: flex;
+  /* gap: 10px; */
+  /* position: relative; */
+  /* margin-top: 20px; */
+  width: 100%;
+  height: 100%;
+}
+
+.cta-btn {
+  background: none;
+  border: 1px solid #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cta-btn:hover {
+  color: var(--var-highlight);
+  transition: all 0.2s ease-in-out;
+}
