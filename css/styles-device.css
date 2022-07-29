@@ -12,6 +12,12 @@
   min-width: 90%;
   width: 90%;
   max-width: 90%;
+  position: relative;
+  left: 0;
+}
+
+.cell-2 {
+  margin-top: 20px;
 }
 
 .ep-artwork {
